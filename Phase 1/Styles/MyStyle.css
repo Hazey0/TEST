@@ -1,0 +1,386 @@
+*{
+    font-family: Lucida Sans Unicode;
+}
+
+.MAIN {
+    background-color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+
+
+.nav1{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 98%;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    background-color: black;
+}
+
+.logo {
+
+    a:hover{
+        background-color: black;
+    }
+
+    img {
+        width: 140px;
+        height: 50px;
+        transition: transform 0.3s ease;
+    }
+}
+
+.searchItem {
+    width: 100%;
+    display: flex;
+    max-width: 500px;
+    position: relative;
+
+    .sButton {
+       background-color: transparent;
+       border: none;
+
+       img{
+        border-radius: 5px;
+       }
+    }
+}
+
+.searchInput {
+    width: 400px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+nav a {
+    padding: 10px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.searchlink:hover{
+    background: black;
+}
+
+
+/* Latest Addition */
+.banner {
+
+    .LatestTitle {
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    img {
+        width: 100%;
+        height: 400px;
+        border-radius: 30px;
+    }
+}
+
+
+
+
+/* Featured Phones */
+.featuredTitle {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: #FF6C00;
+    padding: 0.5rem;
+    border-radius: 30px;
+}
+
+#featuredPhones {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.phoneItem {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+
+
+.featuredPhone:hover {
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.phoneItem img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.phoneInfo {
+    padding: 0.5rem;
+    background-color: #fff;
+    text-align: center;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Sidebar News */
+.SidebarNews {
+    /* news sidebar */
+}
+
+/* Footer */
+.boringInfo {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .featuredPhones {
+        grid-template-columns: 1fr;
+    }
+
+    .searchInput, nav a {
+        font-size: 0.9rem;
+    }
+}
+
+.footerStuff{
+    margin-top: 100px;
+}
+
+/*will effect the */
+.phone{
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 1.5%;
+    padding-left: 20px;
+    background-color:white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 200px;
+}
+
+.phone:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/*will effect the featured phone*/
+.featuredPhone{
+    padding-left: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.featuredPhone:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+/*will effect the img of the phone*/
+.phoneImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+/*will effect the img of the featured phone*/
+.featuredPhoneImage{
+    width: 200px;
+    height: 200px;
+}
+/*will effect the details of the phones that appear under the image of the phone*/
+.phoneDetails{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    padding: 1.1%;
+    
+}
+
+/* will effect the area that contains the phones under the featured phones*/
+.itemsheader{
+    text-align: center;
+    padding: 15px;
+    background-color:#FF6C00;
+    color: white;
+    border-radius: 30px;
+}
+
+/* this effects the name brand of the phone that appears on top of the phone's image*/
+.phoneBrand{
+    font-style:italic;
+    font-weight: bold;
+}
+/* controls the name that appears on the top after you login*/
+.username{
+    font-size: 100%;
+    color: #f4f4f4;
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.logoutButton {
+    padding: 10px 10px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+}
+
+.logoutButton:hover {
+    background-color: white;
+    color: black;
+}
+
+
+#typeContain{
+  
+    display: flex;
+    button {
+        margin: 10px;
+        padding: 15px 30px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border-radius: 10px;
+        display: block;
+        border: 0px;
+        font-weight: 700;
+        box-shadow: 0px 0px 14px -7px #f09819;
+        background-image: linear-gradient(45deg, #0c0b0b 0%, #272624  51%, #5a5a5a  100%);
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    button:hover{
+        background-position: right center;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    button:active {
+        transform: scale(0.95);
+    }
+      
+}
+
+.price{
+    text-align: center;
+    font-weight: bolder;
+    padding: 5%;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+
+
+/* controls the logo that appears next to search*/
+.cancelSearch{
+
+}
+.guest{
+    color: white;
+}
+.loginButton{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;;
+}
+.login{
+    order: -1;
+}
+/*controls the username and logo that appears next to the search bar*/
+.user{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* used to put a gap between the user logo and the user name that appears next to the search bar*/
+.userImage{
+    margin-right: 15px;
+    margin-bottom: 7px;
+}
+
+.details{
+    margin: 5px;
+
+}
+/*controls the "price year storage year" sort buttons*/
+.sortContainer{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+/*controls the asc and dsc buttons for sorting*/
+.sortType{
+
+}
+.userTab{
+    background-color: #f4f4f4;
+    padding: 7px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 200px;
+}
+.transaction{
+   
+}
+.transactionLogo{
+
+}
+.sell{
+
+}
+.sellLogo{
+
+}
+#searcher{
+    margin-left: 270px;
+}
