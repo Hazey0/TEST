@@ -1,11 +1,12 @@
 *{
     font-family: Lucida Sans Unicode;
+    
 }
 
 .MAIN {
-    background-color: white;
-    padding-left: 150px;
-    padding-right: 150px;
+    background-color: rgb(238, 238, 238);
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 body {
@@ -61,13 +62,14 @@ body {
 }
 
 .searchInput {
-    width: 400px;
+    width: 500px;
     padding: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 20px;
 }
 
 nav a {
+    
     padding: 10px 10px;
     cursor: pointer;
     text-decoration: none;
@@ -116,6 +118,7 @@ nav a:hover {
 }
 
 #featuredPhones {
+    background-color: #fff;
     display: flex;
     justify-content: space-evenly;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
@@ -131,7 +134,9 @@ nav a:hover {
     transition: transform 0.3s ease;
 }
 
-
+.featuredPhone{
+    background-color: #fff;
+}
 
 .featuredPhone:hover {
     border-radius: 20px;
@@ -185,28 +190,33 @@ nav a:hover {
     transition: transform 0.3s ease;
     border-radius: 20px;
     margin-bottom: 20px;
-    padding: 1.5%;
-    padding-left: 20px;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
     background-color:white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 200px;
+    
 }
 
 .phone:hover {
+    cursor: pointer;
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /*will effect the featured phone*/
 .featuredPhone{
-    padding-left: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    margin-top: 13px;
     padding: 10px;
+    padding-top: 20px;
     border-radius: 20px;
 }
 
 .featuredPhone:hover{
     transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 /*will effect the img of the phone*/
 .phoneImage{
@@ -244,17 +254,24 @@ nav a:hover {
 /* controls the name that appears on the top after you login*/
 .username{
     font-size: 100%;
+    padding: 10px;
     color: #f4f4f4;
+}
+
+.username:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
 }
 
 .items{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
 }
 
 .logoutButton {
+    transition: background-color 0.3s ease;
     padding: 10px 10px;
     font-size: 15px;
     cursor: pointer;
@@ -265,6 +282,7 @@ nav a:hover {
     background-color: black;
     border: none;
     border-radius: 15px;
+    font-weight: bolder;
 }
 
 .logoutButton:hover {
@@ -274,11 +292,11 @@ nav a:hover {
 
 
 #typeContain{
-  
+
     display: flex;
     button {
-        margin: 10px;
-        padding: 15px 30px;
+        margin: 5px;
+        padding: 15px 20px;
         text-align: center;
         text-transform: uppercase;
         transition: 0.5s;
@@ -288,6 +306,7 @@ nav a:hover {
         display: block;
         border: 0px;
         font-weight: 700;
+        font-size: 14px;
         box-shadow: 0px 0px 14px -7px #f09819;
         background-image: linear-gradient(45deg, #0c0b0b 0%, #272624  51%, #5a5a5a  100%);
         cursor: pointer;
@@ -313,7 +332,12 @@ nav a:hover {
     font-weight: bolder;
     padding: 5%;
     border-radius: 10px;
-    font-size: larger;
+    font-size: small;
+
+    strong{
+        font-size: 20px;
+        margin-right: 3px;
+    }
 }
 
 
@@ -325,19 +349,26 @@ nav a:hover {
 .guest{
     color: white;
 }
+
 .loginButton{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;;
 }
+
 .login{
+    transition: background-color 0.3s ease-in-out;
     order: -1;
+    font-weight: bolder;
+    border-radius: 10px;
 }
+
 /*controls the username and logo that appears next to the search bar*/
 .user{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    font-weight: bolder;
 }
 /* used to put a gap between the user logo and the user name that appears next to the search bar*/
 .userImage{
@@ -347,40 +378,87 @@ nav a:hover {
 
 .details{
     margin: 5px;
-
 }
 /*controls the "price year storage year" sort buttons*/
 .sortContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap: 10px;
 }
 /*controls the asc and dsc buttons for sorting*/
 .sortType{
 
 }
+
 .userTab{
-    background-color: #f4f4f4;
+    color: white;
     padding: 7px;
-    border-radius: 30px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 200px;
+    height: 80px;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.transDiv{
+    display: flex;
+    width: auto;
+    margin-right: -100px;
+}
+.transDiv:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 0px 10px
 }
 .transaction{
-   
+    align-self: center;
 }
-.transactionLogo{
+.transLogo{
+    padding-left: 5px;
+    width: 20%;
+    height: 30%;
+    align-self: center;
+}
 
+.sellDiv{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
 }
-.sell{
+.sellDiv:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
 
+.saleDiv{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
 }
+.saleDiv:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
 .sellLogo{
-
+    padding-left: 10px;
+    width: 30%;
+    height: 50%;
+    align-self: center;
 }
+
+.saleLogo{
+    padding-left: 10px;
+    width: 30%;
+    height: 40%;
+    align-self: center;
+}
+
 #searcher{
-    margin-left: 270px;
+    margin-left: 300px;
 }

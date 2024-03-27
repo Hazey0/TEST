@@ -46,7 +46,7 @@ export function renderPhone(phone) {
     brand.innerHTML = phone.brand;
     name.innerHTML = "Model: " + phone.name;
     year.innerHTML = "Year: " + phone.year;
-    price.innerHTML = phone.price + "QR";
+    price.innerHTML = `<strong>${phone.price}</strong>` + "QR";
     storage.innerHTML = "Storage: " + phone.storage + "GB";
     img.src = phone.img;
     img.addEventListener("click", (event) => {
