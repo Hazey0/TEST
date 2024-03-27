@@ -3,16 +3,15 @@
 
 <head>
     <link rel="stylesheet" href="../Styles/purchase.css">
-    <link rel="stylesheet" href="../Styles/MyStyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Media/Icons/p.png">
     <title>Checkout - Phone Store</title>
 </head>
 
 <body>
 
     <section id="'Navigation">
-
         <nav>
             <div class="nav1">
 
@@ -39,7 +38,7 @@
     <main>
         <h2>Your Cart</h2>
         <div class="cart-item">
-            <img src="phone-image.jpg" alt="Phone Image">
+            <img src="../Media/Images/iPhone14.jpg" alt="Phone Image">
             <div class="item-details">
             </div>
             <div class="quantity-selector">
@@ -56,7 +55,7 @@
         </div>
 
         <h2>Shipping Address</h2>
-        <form action="/place-order" method="post">
+        <form class="mainform" action="/place-order" method="post">
             <div class="form-group">
                 <label for="name">Full Name:</label>
                 <input type="text" name="name" id="name" required>
@@ -89,12 +88,10 @@
         </form>
     </main>
 
-    <section class="footerStuff">
-        <footer class="boringInfo">
+    <footer>
 
-        </footer>
+    </footer>
 
-    </section>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="../Scripts/sell.js" type="module"></script>
+    <script src="../Scripts/sell.js"></script>
     <link rel="stylesheet" href="../Styles/sell.css">
     <link rel="stylesheet" href="../Styles/MyStyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
                     
                     
                  </div>
-                 <div class="user" id="user"></div>
+                 <div class="user" id="user"></div>\
                  <div class="navItem" id="loginButton">
                     <a class="login" href="login.html" id="login">Login</a><!--  Put some links here-->
                  </div>
@@ -65,8 +65,8 @@
             </select>
           </div>
           <div class="form-group">
-            <label for="image">Select Image</label>
-            <input type="file" placeholder="Select Image" id="image" accept="../Medai/Image/*,.jpg" >
+            <label for="image" class="imageTitle">Select Image</label>
+            <input type="file" placeholder="Select Image" class="imageButton" id="image" accept="../Medai/Image/*,.jpg" >
           </div>
           <div class="form-group">
             <label for="quantity">Quantity in Stock:</label>
